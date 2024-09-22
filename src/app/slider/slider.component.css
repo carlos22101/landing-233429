@@ -1,0 +1,38 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .image-container {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .image-container img {
+    width: 200px; 
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-container p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  button.slider-arrow {
+    font-size: 2rem;
+    margin: 0 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button.slider-arrow:hover {
+    color: #ffc107;
+  }
+  
