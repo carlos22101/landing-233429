@@ -1,7 +1,16 @@
-<div class="header">
-    <img src="favicon.ico" alt="SMITE Logo" class="logo">
-    <button (click)="toggleMenu()" class="menu-button">
-      <img src="assets/menu-icon.png" alt="Menu">
-    </button>
-  </div>
-  
+<header class="header">
+ 
+  <button (click)="toggleMenu()" class="menu-button">
+    &#9776; 
+  </button>
+
+  <img src="LOGOSmitenf.png" alt="Logo" class="logo" />
+
+  <nav class="nav-menu" *ngIf="menuOpen">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Dioses</a></li>
+      <li><a href="#">OP Personal</a></li>
+    </ul>
+  </nav>
+</header>

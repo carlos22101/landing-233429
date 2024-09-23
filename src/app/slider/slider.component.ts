@@ -3,30 +3,41 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
-  styleUrl: './slider.component.css'
+  styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
-  images = [
-    { src: 'favicon.ico', description: 'Mapa del modo Just' },
-    { src: 'favicon.ico', description: 'Otro mapa interesante' }
+  
+  slides = [
+    {
+      image: 'Smitejustnf.png',
+      description: 'Mapa del modo Just para 3 jugadores o duel'
+    },
+    {
+      image: 'mapasmitenf.png',
+      description: 'Descripción de la imagen 2 para el slider'
+    }
   ];
+
   currentIndex = 0;
 
-  get currentImage() {
-    return this.images[this.currentIndex].src;
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
   }
 
-  get currentDescription() {
-    return this.images[this.currentIndex].description;
-  }
 
-  nextImage() {
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
-  }
-
-  prevImage() {
+  prevSlide() {
     this.currentIndex =
-      (this.currentIndex - 1 + this.images.length) % this.images.length;
+      (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  }
+
+
+  getCurrentImage() {
+    return this.slides[this.currentIndex].image;
+  }
+
+  
+  getCurrentDescription() {
+    return this.slides[this.currentIndex].description;
   }
 }
-
