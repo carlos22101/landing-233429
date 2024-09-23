@@ -9,7 +9,7 @@ export class HeaderComponent {
   menuOpen = false;
 
   toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-    console.log('Menu toggled:', this.menuOpen);
+    this.menuOpen = !this.menuOpen; 
   }
 }
+

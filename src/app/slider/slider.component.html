@@ -1,9 +1,15 @@
 <div class="slider">
-    <button (click)="prevImage()">&#10094;</button>
-    <div class="image-container">
-      <img [src]="currentImage" alt="Map Image">
-      <p>{{ currentDescription }}</p>
-    </div>
-    <button (click)="nextImage()">&#10095;</button>
-  </div>
   
+  <div class="slider-nav" (click)="prevSlide()">&#10094;</div>
+
+ 
+  <img [src]="getCurrentImage()" alt="Imagen Slider" class="slider-image" />
+
+
+  <div class="slider-description">
+    {{ getCurrentDescription() }}
+  </div>
+
+ 
+  <div class="slider-nav" (click)="nextSlide()">&#10095;</div>
+</div>

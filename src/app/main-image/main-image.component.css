@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    margin-top: 100px;
   }
   
   .main-image img {
-    width: 30%; 
+    width: 25%; 
     height: auto;
   }
   
