@@ -99,7 +99,13 @@
             ],
             "scripts": []
           }
-        }
+        },
+        "deploy": {
+  "builder": "angular-cli-ghpages:deploy",
+  "options": {
+    "repo": "https://github.com/carlos22101/landing-233429.git"
+  }
+}
       }
     }
   }
