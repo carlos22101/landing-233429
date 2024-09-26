@@ -55,7 +55,8 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/landing-233429/"
             },
             "development": {
               "optimization": false,
